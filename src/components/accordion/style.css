@@ -1,0 +1,38 @@
+.faqs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    max-width: 600px;
+    margin: 0px auto;
+}
+.faqs-container__button {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 20px;
+    gap: 20px;
+}
+.faqs-container__button-icon {
+    transition: transform cubic-bezier(0.39, 0.575, 0.565, 1) .5s;
+}
+.faqs-container__answer {
+    text-align: left;
+    border: 2px solid blue;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.faqs-container__button.active .faqs-container__button-icon {
+    transform: rotate(calc(45deg*3));
+}
+.multi-select-checkbox-wrapper {
+    padding: 20px;
+}
+.multi-select-checkbox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
